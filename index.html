@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running Tool</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <h1>Running Tool</h1>
+
+  <form id="interval-calculator-form">
+    <h2>Interval Calculator</h2>
+    <div class="input">
+      <label for="distance-goal">Distance</label>
+      <input type="number" name="distance-goal" id="distance-goal" placeholder="Distance in km">
+    </div>
+    <div class="input-row">
+      <div class="input">
+        <label for="interval-running-time">Time spent running</label>
+        <input type="number" name="interval-running-time" id="interval-running-time" placeholder="Time in minutes">
+      </div>
+      <div class="input">
+        <label for="interval-walking-time">Time spent walking</label>
+        <input type="number" name="interval-walking-time" id="interval-walking-time" placeholder="Time in minutes">
+      </div>
+    </div>
+    <div class="input-row">
+      <div class="input">
+        <label for="interval-running-speed">Running speed</label>
+        <input type="number" name="interval-running-speed" id="interval-running-speed" placeholder="Speed in km/u">
+      </div>
+      <div class="input">
+        <label for="interval-walking-speed">Walking speed</label>
+        <input type="number" name="interval-walking-speed" id="interval-walking-speed" placeholder="Speed in km/u">
+      </div>
+    </div>
+    <button type="submit" id="calculate-button">Calculate</button>
+  </form>
+  <!-- Format results (numberOfIntervals, totalTimeMinutes, totalTimeSeconds, totalSpeedRounded) -->
+  <div id="results">
+    <h2>Results</h2>
+    <p>Distance: <span id="total-distance"></span> km</p>
+    <p>Number of intervals: <span id="number-of-intervals"></span></p>
+    <p>Total time: <span id="total-time-minutes"></span> minutes and <span id="total-time-seconds"></span> seconds</p>
+    <p>Average speed: <span id="total-speed"></span> km/u</p>
+  </div>
+</body>
+
+</html>

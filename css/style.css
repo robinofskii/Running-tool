@@ -1,0 +1,92 @@
+#interval-calculator-form {
+  margin: 0 auto;
+  width: 25%;
+  min-width: 300px;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#interval-calculator-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#interval-calculator-form .input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#interval-calculator-form .input {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#interval-calculator-form .input label {
+  margin-bottom: 3px;
+}
+
+#interval-calculator-form .input input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#interval-calculator-form .input input:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+
+#interval-calculator-form button[type="submit"] {
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+#interval-calculator-form button[type="submit"]:hover {
+  background-color: #286090;
+}
+
+#results {
+  margin: 50px auto;
+  width: 25%;
+  min-width: 300px;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+  display: none;
+}
+
+#results h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#results p {
+  margin-bottom: 10px;
+}
+
+#results p span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
